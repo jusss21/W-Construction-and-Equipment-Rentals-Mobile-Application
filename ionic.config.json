@@ -1,0 +1,7 @@
+{
+  "name": "WConstruction",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
