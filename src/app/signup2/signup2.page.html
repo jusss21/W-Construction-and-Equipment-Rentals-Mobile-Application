@@ -1,0 +1,85 @@
+<ion-content>
+  <img src="../../assets/Logo2.png" class="img2">
+  <div class="login-section ion-paddding">
+    <div class="heading ion-padding">
+      <h1>Register</h1>
+      <p>Create an account.</p>
+    </div>
+    
+
+    <div class="form-input">
+      <ion-list class="bgcolor">
+        <ion-item-group>
+          <ion-item-divider class="des">
+            <ion-label> Register with: </ion-label>
+          </ion-item-divider>
+
+          <div class="signin-btns">
+            <ion-button  class="right-button" size="small" fill="solid" shape="round">Phone Number</ion-button>
+            <ion-text>OR</ion-text>
+            <ion-button class="left-button" size="small" fill="outline" shape="round" routerLink="/signup">Email</ion-button>
+          </div>
+          <ion-item>
+            <ion-icon color="danger" slot="start" name="call-outline"></ion-icon>
+            <ion-label position="floating" color="danger">Phone Number</ion-label>
+            <ion-input label-placement="floating" placeholder="Enter your phone number." type="number" color="light"></ion-input>
+          </ion-item>
+           
+
+        <ion-item-divider class="des">
+          <ion-label> Registration Details </ion-label>
+        </ion-item-divider>
+            <ion-item>
+              <ion-icon color="danger" slot="start" name="person-outline"></ion-icon>
+              <ion-label position="floating" color="danger">First Name</ion-label>
+              <ion-input label-placement="floating" placeholder="Enter your first name." type="email" color="light"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon color="danger" slot="start" name="person-outline"></ion-icon>
+              <ion-label position="floating" color="danger">Last Name</ion-label>
+              <ion-input label-placement="floating" placeholder="Enter your last name." type="email" color="light"></ion-input>
+            </ion-item> 
+    </ion-item-group>
+  </ion-list>
+</div>
+
+
+<div class="form-input">
+  <ion-list class="bgcolor">
+    <ion-item-group>
+      <ion-item-divider class="des">
+        <ion-label> Address </ion-label>
+      </ion-item-divider>
+      <ion-item>
+        <ion-icon color="danger" slot="start" name="briefcase-outline"></ion-icon>
+        <ion-label position="floating" color="danger">Organization</ion-label>
+        <ion-input label-placement="floating" placeholder="Enter Organization." type="text" color="light"></ion-input>
+      </ion-item>
+
+  <ion-item>
+  <ion-icon color="danger" slot="start" name="storefront-outline"></ion-icon>
+  <ion-label position="floating" color="danger">Province</ion-label>
+  <ion-input label-placement="floating" placeholder="Enter province." type="text" color="light"></ion-input>
+</ion-item>
+
+  <ion-item >
+    <ion-icon color="danger" slot="start" name="business-outline"></ion-icon>
+    <ion-label position="floating" color="danger">City/Municipality</ion-label>
+    <ion-input label-placement="floating" placeholder="Enter city/municipality." type="email" color="light"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon color="danger" slot="start" name="home-outline"></ion-icon>
+    <ion-label position="floating" color="danger">Street/Unit No.</ion-label>
+    <ion-input label-placement="floating" placeholder="Enter Street/Unit No." type="text" color="light"></ion-input>
+  </ion-item>
+</ion-item-group>
+</ion-list>
+  
+    <div class="action-buttons ion-padding">
+      <ion-button size="medium" class="login-button" routerLink="/register2">Continue</ion-button>
+      <ion-button class="signup-button" size="medium" fill="outline" routerLink="/login"><ion-text color="brown" >Return to Login</ion-text></ion-button>
+    </div>
+  </div>
+</div>

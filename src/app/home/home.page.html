@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small">
+      <ion-icon name="chevron-up"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="help" routerLink="/faq"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-header class="new-bg-header">
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/userp" class="button2">
+        <ion-chip>
+          <ion-avatar>
+            <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label color="light">My Profile</ion-label>
+        </ion-chip>
+      </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button routerLink="/inquiry" class="button1">
+          INQUIRE NOW
+          <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <!--<ion-col>
+        <ion-button id="present-alert">Logout <ion-icon name="log-out-outline" color="dark" aria-hidden="true" class="bottom-nav"></ion-icon></ion-button>
+        <ion-alert  
+          trigger="present-alert"
+          header="Are you sure you want to logout?"
+          subHeader="Signing out means that you will need to sign again."
+          [buttons]="alertButtons" routerLink="/landing"
+        ></ion-alert>
+        </ion-col>-->
+    </ion-row>
+    </ion-grid>
+  
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+        <div class="topnav">
+          <a class="active" routerLink="/home">Home</a>
+          <a routerLink="/aboutus">About</a>
+          <a routerLink="/services">Services</a>
+          <a routerLink="/contact">Contact</a>
+        </div>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <img src="assets/w1.jpg" />
+    <ion-card-content>
+      For all construction and engineering works, W CONSTRUCTION AND EQUIPMENT RENTALS and W. RIVERA CONSTRUCTION & EQUIPMENT RENTALS maintains a complete line of heavy equipment with expert mechanics ready to serve every need 24 hours a day and can provide ready mix & also trucking services. Should any equipment breakdown during a time of operation, our company have reserve stand-by equipment for replacement so as not hamper operations.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/w2.jpg" />
+    <ion-card-content>
+      W CONSTRUCTION AND EQUIPMENT RENTALS and W. RIVERA CONSTRUCTION & EQUIPMENT RENTALS have evolved over time to pass on innovation and improvement, allowing us to fulfill and even surpass our client’s expectations and requirements. We are a full-service design/builder providing a range of construction services. The key to providing outstanding services for our clients is the care taken in planning projects for ultimate satisfaction.
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
+
+<ion-footer>
+  <ion-img src="assets/Logo2.png"></ion-img>
+</ion-footer>

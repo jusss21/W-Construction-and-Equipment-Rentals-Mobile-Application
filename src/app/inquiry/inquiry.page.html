@@ -1,0 +1,66 @@
+<ion-content>
+  <div id ="header">
+    <div id="app-bar">
+      <ion-icon slot="icon-only" color="dark" name="arrow-back" routerLink="/home"></ion-icon>
+    </div>
+    <div>
+         <img src="assets/Logo2.png"/>
+    </div><br>
+    <h1>Send us an Inquiry!</h1>
+    <p>Your questions not on FAQs? Send us your custom inquiry.</p>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <ion-label>Name*</ion-label>
+        <ion-item>
+          <ion-icon name="person-outline" color="light"></ion-icon>
+          <ion-input class="text" type="text" placeholder="Enter your Name."></ion-input>
+        </ion-item>
+
+        <ion-label>Organization/Company*</ion-label>
+        <ion-item>
+          <ion-icon name="business-outline" color="light"></ion-icon>
+          <ion-input class="text" type="text" placeholder="Enter your organization name."></ion-input>
+        </ion-item>
+
+        <ion-item-group>
+          <ion-item-divider class="lbl">
+            <ion-label> Select a field where we can contact you. </ion-label>
+      </ion-item-divider>
+        </ion-item-group>
+        <div class="signin-btns">
+          <ion-checkbox labelPlacement="end" size="small">Email</ion-checkbox>
+          <ion-checkbox labelPlacement="end" class="right-button" size="small">Phone Number</ion-checkbox>
+        </div>
+
+        <ion-label>Email*</ion-label>
+        <ion-item>
+          <ion-icon name="mail" color="light"></ion-icon>
+          <ion-input class="text" type="email" placeholder="Enter your Email."></ion-input>
+        </ion-item>
+
+        <ion-label>Phone Number*</ion-label>
+        <ion-item>
+          <ion-icon name="call-outline" color="light"></ion-icon>
+          <ion-input class="text" type="number" placeholder="Enter your phone number."></ion-input>
+        </ion-item>
+
+        <ion-label>Inquiry*</ion-label>
+        <ion-item>
+          <ion-icon name="chatbox-ellipses-outline" color="light"></ion-icon>
+          <ion-textarea class="text" [autoGrow]="true" type="number" placeholder="Enter your inquiry (i.e., project management, equipment availability etc.)"></ion-textarea>
+        </ion-item>
+
+        <ion-button id="present-alert" class="alert">SEND</ion-button>
+          <ion-alert
+            trigger="present-alert"
+            header="Success"
+            message="You have successfully sent an inquiry!"
+            [buttons]="alertButtons" routerLink="/home"
+          ></ion-alert>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

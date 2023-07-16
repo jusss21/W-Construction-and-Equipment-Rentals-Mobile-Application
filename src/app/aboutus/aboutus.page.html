@@ -1,0 +1,215 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small">
+      <ion-icon name="chevron-up"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="help" routerLink="/faq"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-header class="new-bg-header">
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/userp" class="button2">
+        <ion-chip>
+          <ion-avatar>
+            <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label color="light">My Profile</ion-label>
+        </ion-chip>
+      </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button routerLink="/inquiry" class="button1">
+          INQUIRE NOW
+          <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <!--<ion-col>
+        <ion-button id="present-alert">Logout <ion-icon name="log-out-outline" color="dark" aria-hidden="true" class="bottom-nav"></ion-icon></ion-button>
+        <ion-alert  
+          trigger="present-alert"
+          header="Are you sure you want to logout?"
+          subHeader="Signing out means that you will need to sign again."
+          [buttons]="alertButtons" routerLink="/landing"
+        ></ion-alert>
+        </ion-col>-->
+    </ion-row>
+    </ion-grid>
+  
+    <ion-toolbar>
+        <div class="topnav">
+          <a routerLink="/home">Home</a>
+          <a class="active" routerLink="/aboutus">About</a>
+          <a routerLink="/services">Services</a>
+          <a routerLink="/contact">Contact</a>
+        </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-button id="open-modal" expand="block" class="item3">GALLERY</ion-button>
+    
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-content>
+          <ion-toolbar>
+            <ion-buttons slot="end">
+              <ion-button color="dark" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+            <ion-buttons slot="start">
+              <ion-button color="dark" (click)="modal.dismiss()">Done</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+  
+          <br>
+            <div class="grid-full" class="ion-text-center">
+              <ion-row>
+                <ion-col>
+                  <img src="assets/road1.png" height="200"/>
+                </ion-col>
+        
+                <ion-col>
+                  <img src="assets/road.png" height="200"/>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <img src="assets/road2.png" height="200"/>
+                </ion-col>
+        
+                <ion-col>
+                  <img src="assets/school2.png" height="200" width="170"/>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <img src="assets/school1.png" height="200"/>
+                </ion-col>
+        
+                <ion-col>
+                  <img src="assets/school.png" height="200"/>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <img src="assets/cal.png" height="200"/>
+                </ion-col>
+        
+                <ion-col>
+                  <img src="assets/cal1.png" height="200"/>
+                </ion-col>
+              </ion-row>
+            </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+  <ion-card>
+    <img src="assets/place.jpg" />
+    <ion-card-content>
+      W CONSTRUCTION AND EQUIPMENT RENTALS with business address at As-is, Bauan, Batangas & W. RIVERA CONSTRUCTION & EQUIPMENT RENTALS with business address at JY Orosa St., Pob. IV, Bauan, Batangas are duly registered contractors and recognized to undertake the following kinds of civil works projects:
+      <br><br>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+            <ion-item slot="header" class="item1">
+            <ion-label>PROJECTS</ion-label>
+          </ion-item>
+          <div slot="content">
+            <ion-list>
+              <ion-item class="item2">
+                <ion-label>Residential, Building, Industrial Plants
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Dam. Reservoir and Tunneling
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Irrigation and Floor Control
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Park-Playground, Recreational Work
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Port, Harbour and Offshore Engineering
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Road, Highway, Pavement Railways, Airport, Horizontal Structures, Bridges
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Sewerage and Sewage System
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Water Supply
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>Water Treatment Plant and System
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/place2.jpg" />
+    <ion-card-content>
+      <h1>VISION</h1>
+      To be the builder of choice for valued clients & higher performing employees.
+      <br><br><h1>MISSION</h1>
+      To accommodate customer needs and expectations by designing and manufacturing our quality product with more functional and advantageous concrete batching plants to our customer in a way that ensures maximum level of customer satisfaction.
+      <br><br>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" class="item1">
+            <ion-label>CONTRACTOR INFORMATION</ion-label>
+          </ion-item>
+          <div slot="content">
+            <ion-list>
+              <ion-item class="item2">
+                <ion-label>Owner: Wilson Leandro T. Rivera
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>DOB: February 27, 1978
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+                <ion-label>PCAB No.: 42844
+                </ion-label>
+              </ion-item>
+              <ion-item class="item2">
+              <ion-label>TIN: 938-793-943-000
+              </ion-label>
+            </ion-item>
+            </ion-list>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-img src="assets/Logo2.png"></ion-img>
+</ion-footer>

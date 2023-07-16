@@ -1,0 +1,28 @@
+<ion-content>
+  <img src="../../assets/Logo2.png" class="img2">
+  <div class="login-section ion-paddding">
+    <div class="heading ion-padding">
+      <h1>Reset your password.</h1>
+      <p>Please provide the username or email address that you used when you signed
+        up for your W account.</p>
+    </div>
+    <div class="login-form ion-padding"></div>
+
+    <div class="form-input">
+      <ion-item  lines="inset">
+        <ion-icon color="danger" slot="start" name="mail-outline"></ion-icon>
+        <ion-label position="floating" color="danger">Email</ion-label>
+        <ion-input label-placement="floating" placeholder="Enter email." type="email" color="light"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="action-buttons ion-padding">
+      <ion-button class="login-button" routerLink="/login">Send</ion-button>
+      <p></p>
+      <div><ion-text>OR</ion-text></div>
+      <div>
+      <ion-button class="signup-button" fill="outline" routerLink="/login">Return to Login</ion-button>
+    </div>
+    </div>
+  </div>
+</ion-content>

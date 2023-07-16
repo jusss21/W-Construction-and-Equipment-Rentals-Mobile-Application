@@ -1,0 +1,106 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small">
+      <ion-icon name="chevron-up"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="help" routerLink="/faq"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-header class="new-bg-header">
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/userp" class="button2">
+        <ion-chip>
+          <ion-avatar>
+            <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label color="light">My Profile</ion-label>
+        </ion-chip>
+      </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button routerLink="/inquiry" class="button1">
+          INQUIRE NOW
+          <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <!--<ion-col>
+        <ion-button id="present-alert">Logout <ion-icon name="log-out-outline" color="dark" aria-hidden="true" class="bottom-nav"></ion-icon></ion-button>
+        <ion-alert  
+          trigger="present-alert"
+          header="Are you sure you want to logout?"
+          subHeader="Signing out means that you will need to sign again."
+          [buttons]="alertButtons" routerLink="/landing"
+        ></ion-alert>
+        </ion-col>-->
+    </ion-row>
+    </ion-grid>
+  
+    <ion-toolbar>
+        <div class="topnav">
+          <a routerLink="/home">Home</a>
+          <a routerLink="/aboutus">About</a>
+          <a class="active" routerLink="/services">Services</a>
+          <a routerLink="/contact">Contact</a>
+        </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <br>
+  <ion-list lines="full">
+    <ion-item class="listdes">
+      <ion-label>Project Management</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Manpower supply including supervision 
+        <br>and labor services</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Construction of roads, concrete 
+        <br>pavements, site development and other 
+        <br>related civil works</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Structural steel fabrication/erection and 
+        <br>industrial piping works</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Construction of warehouses, industrial 
+        <br>facilities / plants, steel bridges and buildings</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Fabrication / installation of steel tanks 
+        <br>(stainless/carbon steel), pressure vessels, 
+        <br>boiler, heat exchangers, LPG bulk storage 
+        <br>and petroleum storage tanks</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Installation/alignment of stationary and 
+        <br>rotating equipment and other electromechanical works</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Hot and cold industrial insulation and 
+        <br>metal cladding</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Supply of armor rocks for breakwater 
+        <br>projects</ion-label>
+    </ion-item>
+    <ion-item class="listdes">
+      <ion-label>Batching Plant</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-img src="assets/Logo2.png"></ion-img>
+</ion-footer>

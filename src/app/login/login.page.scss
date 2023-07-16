@@ -1,0 +1,124 @@
+ion-content{
+    --background: 
+    url("../../assets/place.jpg") no-repeat center center / cover;
+    font-family:Poppins;
+}
+
+ion-item{
+    --background:#EEEDED;
+        margin:10px;
+        --padding-start:36px;
+        --border-radius: 14px;
+        font-weight:550;
+        --box-shadow:none;
+}
+ion-text{
+    text-align: center;
+}
+img{
+    width:250px;
+    height:100px;
+    margin: 0 auto;
+    margin-top: 70px;
+    display:block;
+}
+
+.img2{
+    height: 60px;
+    margin-top: 30%;
+}
+
+.icon{
+    margin-top: 8%;
+}
+
+.txt{
+    margin-top: 3%;
+}
+
+.fp{
+    color: #A60808;
+    margin-top:20px;
+    margin-right: 12px;
+    text-align: right;
+    font-size:15px;
+}
+.login-section{
+    height: 70vh;
+    width: 100%;
+    max-width: 500px;
+    background:#ffffff;
+    right:0;
+    left:0;
+    bottom:0;
+    position:fixed;
+    margin:auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    .heading{
+        margin-top:5px;
+
+        h1{
+            font-size: 1.8rem;
+            font-weight: bolder;
+            color: #A60808;
+        }
+        p{
+            margin-top:5px;
+            font-size: 1rem;
+            color: #ef6969;
+        }
+    }
+    .login-form{
+        .form-input{
+            position: relative;
+            margin-bottom: 5px;
+            ion-item:part(native){
+                padding-left:0;
+            }
+
+            ion-label{
+                position:absolute;
+                margin-left:35px;
+                font-weight: bolder;
+                font-size:0.8rem;
+                top: 3px;
+            }
+
+            ion-input{
+                --placeholder-color:rgb(120, 120, 120);
+                --padding-start:36px;
+                font-size:0.9rem;
+                margin-bottom:22px;
+                --color:#0000;
+            }
+        }
+    }
+    .action-buttons{
+        text-align:center;
+        .login-button{
+            --box-shadow:none;
+            --border-radius:40px;
+            --background:#A60808;
+            --color:white;
+            font-family: Poppins;
+            font-weight:bold;
+            font-size:1rem;
+        }
+        p{
+            margin-top:10px;
+            font-size: 20px;
+            color: #DD919C;
+        }
+        .signup-button{
+            --border-color:#DDDAD1;
+            --border-radius:40px;
+            --color:#868378;
+            font-weight:bold;
+            margin-top:10px;
+            font-family: Poppins;
+            font-size:1rem;
+        }
+    }
+}

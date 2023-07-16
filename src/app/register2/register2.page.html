@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="header">
+    <ion-buttons>
+      <ion-button routerLink="/signup2">
+        <ion-icon slot="icon-only" color="dark" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon slot="icon-only" color="dark" name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div> 
+  <img src="../../assets/Logo2.png" class="img2">
+  <div class="login-section ion-paddding">
+    <div class="heading ion-padding">
+      <h1>Register</h1>
+      <p>your account.</p>
+    </div>
+    <div class="login-form ion-padding"></div>
+
+    <div class="form-input">
+      <ion-item  lines="inset">
+        <ion-icon color="danger" slot="start" name="call-outline"></ion-icon>
+        <ion-label position="floating" color="danger">Phone Number</ion-label>
+        <ion-input label-placement="floating" placeholder="Enter email." type="email" color="light"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="form-input">
+      <ion-item lines="inset">
+        <ion-icon  color= "danger"slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-label position="floating" color="danger">Password</ion-label>
+        <ion-input 
+        label-placement="floating" 
+        fill="outline" 
+        color="light"
+        placeholder="Enter Password." 
+        type="password"
+        [counter]="true"
+        maxlength="8"
+        [counterFormatter]="customCounterFormatter"
+        ></ion-input>
+      </ion-item>
+    </div>
+    <h6>By proceeding to sign up, I acknowledge that I have read 
+        and consented to W Constructions’ Terms of Use and Privacy Policy,
+         which sets out how W Construction collects, uses and 
+         discloses my personal data, and the rights that I have under applicable law.</h6>
+
+    <div class="action-buttons ion-padding">
+      
+      <div><ion-checkbox labelPlacement="end" class="agree">I agree to the terms and conditions.</ion-checkbox></div>
+      <ion-button class="login-button" routerLink="/login">Create</ion-button>
+
+    </div>
+  </div>
+</ion-content>

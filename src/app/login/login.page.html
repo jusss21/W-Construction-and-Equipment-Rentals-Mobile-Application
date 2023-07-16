@@ -1,0 +1,37 @@
+<ion-content>
+  <img class="img2" src="../../assets/Logo2.png">
+  <div class="login-section ion-paddding">
+    <div class="heading ion-padding">
+      <h1>Login</h1>
+      <p>Log in through your registered account.</p>
+    </div>
+    <div class="login-form ion-padding"></div>
+
+    <div class="form-input">
+      <ion-item lines="inset">
+        <ion-icon class="icon" color="danger" slot="start" name="mail-outline"></ion-icon>
+        <ion-label position="floating" color="danger" class="txt">Email</ion-label>
+        <ion-input label-placement="floating" placeholder="Enter email." type="email" color="light"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="form-input">
+      <ion-item lines="inset">
+        <ion-icon  class="icon" color= "danger"slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-label position="floating" color="danger" class="txt">Password</ion-label>
+        <ion-input label-placement="floating" fill="outline" placeholder="Enter Password." type="password" color="light"></ion-input>
+      </ion-item>
+    </div>
+    <div class="fp">
+      <a routerLink="/forgot" class="fp">Forgot Password?</a>
+    </div>
+    <div class="action-buttons ion-padding">
+      <ion-button class="login-button" routerLink="/home">Login</ion-button>
+      <p></p>
+      <div><ion-text color="light">Don't have an account yet?</ion-text></div>
+      <div>
+      <ion-button class="signup-button" fill="outline" routerLink="/signup">Register Now</ion-button>
+    </div>
+    </div>
+  </div>
+</ion-content>
